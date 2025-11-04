@@ -1,0 +1,1 @@
+import 'dart:js_interop' as lib2;
