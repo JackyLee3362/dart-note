@@ -8,6 +8,21 @@ tags:
 description:
 ---
 
-## 中文字符乱码
+##
+
+## no directionality widget found
+
+原因: 因为 Flutter 不知道文本是 LTR 还是 RTL
+
+解决方案
+
+```dart
+Text("Hello", textDirection: TextDirection.ltr)
+或者
+Directionality(
+          textDirection: TextDirection.ltr,
+          child: Text('Hello')
+)
+```
 
 ## 参考资料

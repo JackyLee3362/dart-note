@@ -1,5 +1,9 @@
+// https://dart.cn/language/type-system
 class Animal {
-  eat() {}
+  // 可以让子类更换变量
+  eat(covariant Animal animal) {}
+
+  sleep() {}
 
   @override
   void noSuchMethod(Invocation invocation) {
@@ -10,9 +14,12 @@ class Animal {
   }
 }
 
-class Bird extends Animal {}
+class Bird extends Animal {
+  @override
+  eat(Bird bird) {}
+}
 
 void main() {
   var b = Bird();
-  b.eat();
+  b.sleep();
 }
