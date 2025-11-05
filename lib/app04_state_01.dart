@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 
 // 1. 用户点击按钮
@@ -6,6 +8,7 @@ import 'package:flutter/material.dart';
 // 4. setState 通知框架重建 Widget，Flutter 标记需要重建
 // 5. Flutter 框架调用 build 方法
 // 6. 界面刷新，显示新数据
+
 class MyCounterV1 extends StatefulWidget {
   const MyCounterV1({super.key});
 
@@ -15,8 +18,24 @@ class MyCounterV1 extends StatefulWidget {
 
 class _MyCounterV1State extends State<MyCounterV1> {
   int count = 0;
+
+  // 只执行一次
+  @override
+  void initState() {
+    log("init state...");
+    super.initState();
+  }
+
+  // 每次变动执行
+  @override
+  void didChangeDependencies() {
+    log("did change dependencies...");
+    super.didChangeDependencies();
+  }
+
   @override
   Widget build(BuildContext context) {
+    log("build...");
     return Directionality(
       textDirection: TextDirection.ltr,
       child: Column(

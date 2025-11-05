@@ -8,8 +8,6 @@ tags:
 description:
 ---
 
-##
-
 ## no directionality widget found
 
 原因: 因为 Flutter 不知道文本是 LTR 还是 RTL
@@ -26,3 +24,5 @@ Directionality(
 ```
 
 ## 参考资料
+
+- [flutter/samples: A collection of Flutter examples and demos](https://github.com/flutter/samples)
