@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:my_flutter_app/app01_helloworld.dart';
-import 'package:my_flutter_app/app02_counter.dart';
-import 'package:my_flutter_app/app03_layout_01.dart';
-import 'package:my_flutter_app/app03_layout_02.dart';
-import 'package:my_flutter_app/app04_state_01.dart';
-import 'package:my_flutter_app/app04_state_02.dart';
-import 'package:my_flutter_app/app04_state_03.dart';
-import 'package:my_flutter_app/app05_input_01_button.dart';
+import 'package:my_flutter_app/src/app01_helloworld.dart';
+import 'package:my_flutter_app/src/app02_counter.dart';
+import 'package:my_flutter_app/src/app03_layout_01.dart';
+import 'package:my_flutter_app/src/app03_layout_02.dart';
+import 'package:my_flutter_app/src/app04_state_01.dart';
+import 'package:my_flutter_app/src/app04_state_02.dart';
+import 'package:my_flutter_app/src/app04_state_03.dart';
+import 'package:my_flutter_app/src/app05_input_01_button.dart';
+import 'package:my_flutter_app/src/app05_input_02_text.dart';
+import 'package:my_flutter_app/src/app05_input_03_form.dart';
+import 'package:my_flutter_app/src/app05_input_04_segmented.dart';
 
 void main() {
   // FAQ
@@ -20,5 +23,18 @@ void main() {
   // runApp(const MyCounterV1());
   // runApp(const MyCounterV2());
   // runApp(const HomeScreenV2());
-  runApp(MyButtons());
+  // runApp(MyButtons());
+  // runApp(MyForm());
+  runApp(
+    MaterialApp(
+      title: "MyFlutter",
+      home: Scaffold(
+        appBar: AppBar(),
+        body: //
+            MySegmentedButton(),
+        // MyTexts(),
+        // MyForm(),
+      ),
+    ),
+  );
 }
