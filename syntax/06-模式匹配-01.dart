@@ -14,11 +14,11 @@ void main(List<String> args) {
     case [a, b]:
       print('$a, $b');
   }
-  deconstruct();
+  testDestructuring();
 }
 
-deconstruct() {
-  print("解构");
+testDestructuring() {
+  print("解构 - Destructuring");
   var numList = [1, 2, 3];
   // List pattern [a, b, c] destructures the three elements from numList...
   var [a, b, c] = numList;
@@ -32,11 +32,11 @@ deconstruct() {
   }
 }
 
-deconstruct2() {
+testDestructuringV2() {
   var (a, [b, c]) = ('str', [1, 2]);
 }
 
-forinloop() {
+testForInLoop() {
   Map<String, int> hist = {'a': 23, 'b': 100};
 
   for (var MapEntry(key: key, value: count) in hist.entries) {

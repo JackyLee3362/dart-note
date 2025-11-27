@@ -24,7 +24,7 @@ void main() {
 }
 
 // 不建议
-goto() {
+testGoto() {
   // continue labels
   outerLoop:
   for (var i = 1; i <= 3; i++) {
