@@ -9,14 +9,14 @@ import 'package:flutter/material.dart';
 // 5. Flutter 框架调用 build 方法
 // 6. 界面刷新，显示新数据
 
-class MyCounterV1 extends StatefulWidget {
-  const MyCounterV1({super.key});
+class MyStateV1 extends StatefulWidget {
+  const MyStateV1({super.key});
 
   @override
-  State<StatefulWidget> createState() => _MyCounterV1State();
+  State<StatefulWidget> createState() => _MyStateV1State();
 }
 
-class _MyCounterV1State extends State<MyCounterV1> {
+class _MyStateV1State extends State<MyStateV1> {
   int count = 0;
 
   // 只执行一次

@@ -1,32 +1,30 @@
 import 'package:flutter/material.dart';
 
-class MyCounterV2 extends StatefulWidget {
-  const MyCounterV2({super.key});
+class MyStateV2 extends StatefulWidget {
+  const MyStateV2({super.key});
 
   @override
-  State<StatefulWidget> createState() => _MyColumnCounter();
+  State<StatefulWidget> createState() => _MyStateV2();
 }
 
-class _MyColumnCounter extends State<MyCounterV2> {
+class _MyStateV2 extends State<MyStateV2> {
   int count = 0;
   @override
   Widget build(BuildContext context) {
-    return Directionality(
-      textDirection: TextDirection.ltr,
-      child: Column(
-        children: [
-          MyCounter(count: count),
-          MyCounter(count: count + 1),
-          TextButton(
-            onPressed: () {
-              setState(() {
-                count++;
-              });
-            },
-            child: Text("click"),
-          ),
-        ],
-      ),
+    return Column(
+      children: [
+        // 共享数据
+        MyCounter(count: count),
+        MyCounter(count: count + 1),
+        TextButton(
+          onPressed: () {
+            setState(() {
+              count++;
+            });
+          },
+          child: Text("click"),
+        ),
+      ],
     );
   }
 }
