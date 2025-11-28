@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 
-class LayoutV1Demo extends StatelessWidget {
-  const LayoutV1Demo({super.key});
+void main() {
+  runApp(const LayoutV1App());
+}
+
+class LayoutV1App extends StatelessWidget {
+  const LayoutV1App({super.key});
+
   @override
   Widget build(BuildContext context) {
     // return testCenter();

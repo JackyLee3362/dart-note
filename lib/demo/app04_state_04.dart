@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 
 typedef ValueChanged<T> = void Function(T value);
 
+void main() {
+  runApp(MyCounterV4(onChanged: (value) {}));
+}
+
 class MyCounterV4 extends StatefulWidget {
   const MyCounterV4({super.key, required this.onChanged});
 

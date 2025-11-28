@@ -1,9 +1,14 @@
+/* 有状态 Flutter Demo */
+
 import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const CounterApp());
+}
 
 class CounterApp extends StatelessWidget {
   const CounterApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -22,6 +27,9 @@ class MyHomePage extends StatefulWidget {
 
   // MyHomePage, 有状态的对象
 
+  // 该类是状态的配置，包含由父组件提供变量值(这里是 title),
+  // 并被 State 的 build 方法使用,
+  // 字段总是被标记为 final 的.
   // This class is the configuration for the state. It holds the values (in this
   // case the title) provided by the parent (in this case the App widget) and
   // used by the build method of the State. Fields in a Widget subclass are

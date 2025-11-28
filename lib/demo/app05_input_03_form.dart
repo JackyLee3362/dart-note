@@ -2,6 +2,15 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 
+void main(List<String> args) {
+  runApp(
+    MaterialApp(
+      title: "MyFlutter",
+      home: Scaffold(appBar: AppBar(), body: MyForm()),
+    ),
+  );
+}
+
 class MyForm extends StatefulWidget {
   const MyForm({super.key});
 

@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+void main(List<String> args) {
+  runApp(MyButtons());
+}
+
 class MyButtons extends StatelessWidget {
   const MyButtons({super.key});
 

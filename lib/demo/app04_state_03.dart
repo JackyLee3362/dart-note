@@ -2,8 +2,12 @@ import 'dart:developer' show log;
 
 import 'package:flutter/material.dart';
 
-class MyStateV3 extends StatefulWidget {
-  const MyStateV3({super.key});
+void main() {
+  runApp(const MyStateV3App());
+}
+
+class MyStateV3App extends StatefulWidget {
+  const MyStateV3App({super.key});
 
   @override
   State<StatefulWidget> createState() {
@@ -11,7 +15,7 @@ class MyStateV3 extends StatefulWidget {
   }
 }
 
-class _MyStateV3 extends State<MyStateV3> {
+class _MyStateV3 extends State<MyStateV3App> {
   String data = "foo";
 
   @override

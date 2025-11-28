@@ -2,6 +2,15 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 
+void main(List<String> args) {
+  runApp(
+    MaterialApp(
+      title: "MyFlutter",
+      home: Scaffold(appBar: AppBar(), body: MySegmentedButton()),
+    ),
+  );
+}
+
 enum Calendar { day, week, month, year }
 
 // StatefulWidget...

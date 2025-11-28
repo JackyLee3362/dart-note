@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
-class LayoutV2Demo extends StatelessWidget {
-  const LayoutV2Demo({super.key});
+void main() {
+  runApp(const LayoutV2App());
+}
+
+class LayoutV2App extends StatelessWidget {
+  const LayoutV2App({super.key});
   @override
   Widget build(BuildContext context) {
     return testListView();

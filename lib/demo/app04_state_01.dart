@@ -2,6 +2,10 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(const MyStateV1App());
+}
+
 // 1. 用户点击按钮
 // 2. 触发 onPressed 事件
 // 3. 调用 setState 方法
@@ -9,14 +13,14 @@ import 'package:flutter/material.dart';
 // 5. Flutter 框架调用 build 方法
 // 6. 界面刷新，显示新数据
 
-class MyStateV1 extends StatefulWidget {
-  const MyStateV1({super.key});
+class MyStateV1App extends StatefulWidget {
+  const MyStateV1App({super.key});
 
   @override
-  State<StatefulWidget> createState() => _MyStateV1State();
+  State<StatefulWidget> createState() => _MyStateV1AppState();
 }
 
-class _MyStateV1State extends State<MyStateV1> {
+class _MyStateV1AppState extends State<MyStateV1App> {
   int count = 0;
 
   // 只执行一次
